@@ -1,0 +1,3 @@
+CHANGED,/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/abr/predator/Main_activity$override.class
+CHANGED,/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/abr/predator/Main_activity$2$override.class

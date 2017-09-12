@@ -19,7 +19,7 @@ public class IOIO_thread_rover_tank extends IOIO_thread {
     public int counter_turn_left, counter_turn_right;
     private float irLeftReading, irCenterReading, irRightReading;
 
-    public static final double ProximityThreshold = 0.7; //IR sensor threshold for collisions
+    public static final double ProximityThreshold = 0.5; //IR sensor threshold for collisions
 
     @Override
     public void setup() throws ConnectionLostException {
@@ -173,15 +173,15 @@ public class IOIO_thread_rover_tank extends IOIO_thread {
 
     public synchronized void turn(int value) { //.3 --> .25
         if (value > 1500) {
-            speed_left = (float) 0.25;
-            speed_right = (float) 0.25;
+            speed_left = (float) 0.2;
+            speed_right = (float) 0.2;
             direction_left = true;
             direction_right = false;
             counter_forward_left=0;
             counter_forward_right=0;
         } else if (value < 1500) {
-            speed_left = (float) 0.25;
-            speed_right = (float) 0.25;
+            speed_left = (float) 0.2;
+            speed_right = (float) 0.2;
             direction_left = false;
             direction_right = true;
             counter_forward_left=0;

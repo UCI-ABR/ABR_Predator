@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/build/intermediates/res/merged/debug/raw/smb_powerup.wav",
-        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/src/main/res/raw/smb_powerup.wav"
+        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/build/intermediates/res/merged/debug/raw/smb_gameover.wav",
+        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/src/main/res/raw/smb_gameover.wav"
     },
     {
-        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/build/intermediates/res/merged/debug/raw/smb_gameover.wav",
-        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/src/main/res/raw/smb_gameover.wav"
+        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/build/intermediates/res/merged/debug/raw/smb_powerup.wav",
+        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/src/main/res/raw/smb_powerup.wav"
     },
     {
-        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/build/intermediates/res/merged/debug/raw/beep.ogg",
-        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/src/main/res/raw/beep.ogg"
+        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/build/intermediates/res/merged/debug/raw/smb_mariodie.wav",
+        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/src/main/res/raw/smb_mariodie.wav"
     },
     {
-        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/build/intermediates/res/merged/debug/raw/smb_mariodie.wav",
-        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/src/main/res/raw/smb_mariodie.wav"
+        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/build/intermediates/res/merged/debug/raw/beep.ogg",
+        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/src/main/res/raw/beep.ogg"
     }
 ]

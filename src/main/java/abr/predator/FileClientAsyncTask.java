@@ -16,7 +16,8 @@ public class FileClientAsyncTask extends AsyncTask<Void,Void,Object[]> {
     	int timeout = 10000;
 	    int port = 8888;
 	    //InetSocketAddress socketAddress  = new InetSocketAddress("192.168.49.1", port);
-		InetSocketAddress socketAddress  = new InetSocketAddress("169.234.71.200", port);
+		//InetSocketAddress socketAddress  = new InetSocketAddress("169.234.71.200", port);
+		InetSocketAddress socketAddress  = new InetSocketAddress("169.234.80.66", port);
 	    try {
 	      Socket socket = new Socket();
 	      objects[0] = socket;

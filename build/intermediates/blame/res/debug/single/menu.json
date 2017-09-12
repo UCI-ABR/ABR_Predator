@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/build/intermediates/res/merged/debug/menu/capture.xml",
-        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/src/main/res/menu/capture.xml"
+        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/src/main/res/menu/main.xml"
     },
     {
-        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/build/intermediates/res/merged/debug/menu/history.xml",
-        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/src/main/res/menu/history.xml"
+        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/build/intermediates/res/merged/debug/menu/history.xml",
+        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/src/main/res/menu/history.xml"
     },
     {
-        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/build/intermediates/res/merged/debug/menu/main.xml",
-        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/src/main/res/menu/main.xml"
+        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/build/intermediates/res/merged/debug/menu/capture.xml",
+        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/src/main/res/menu/capture.xml"
     },
     {
-        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/build/intermediates/res/merged/debug/menu/encode.xml",
-        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator2/src/main/res/menu/encode.xml"
+        "merged": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/build/intermediates/res/merged/debug/menu/encode.xml",
+        "source": "/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/src/main/res/menu/encode.xml"
     }
 ]

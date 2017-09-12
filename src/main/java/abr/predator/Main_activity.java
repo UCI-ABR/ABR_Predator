@@ -371,11 +371,20 @@ public class Main_activity extends Activity implements IOIOLooperProvider, CvCam
 					Log.i("turn around","moving");
 				}
 			}*/
-			if(turnAroundCounter > 0){
+			yellowCenter = mDetectorYellow.getCenter();
+			Log.i("yellowCenter.x", String.format("%.2f", yellowCenter.x));
+			if (sleepCounter % 60 > 40) {
+				m_ioio_thread.move(1500); //move forward
+			}
+			else if(turnAroundCounter > 0){
 				turnAroundCounter--;
 				m_ioio_thread.move(1500); //stop
-				m_ioio_thread.turn(1600);
+				m_ioio_thread.turn(1550);
 				Log.i("turnaround","turning");
+				if (yellowRadius[0] >=30 && outsideNest){
+					turnAroundCounter = 0;
+					moveCounter = 0;
+				}
 			} else if (moveCounter > 0){
 				moveCounter--;
 				if(m_ioio_thread.getCrashWarning1()) {
@@ -385,19 +394,21 @@ public class Main_activity extends Activity implements IOIOLooperProvider, CvCam
 					m_ioio_thread.move(1600);
 				}
 				Log.i("turnaround","moving");
+				if (yellowRadius[0] >=30 && outsideNest){
+					turnAroundCounter = 0;
+					moveCounter = 0;
+				}
 			}
 			else {
-				yellowCenter = mDetectorYellow.getCenter();
-				Log.i("yellowCenter.x", String.format("%.2f", yellowCenter.x));
 				//search for prey
-				if (yellowRadius[0] <= 70) {
+				if (yellowRadius[0] <= 30) {
 					//m_ioio_thread.move(1500); //stop
 					//m_ioio_thread.turn(1400); //turn ccw
 					turnAroundCounter = 30 + (int)(Math.random()*30);
-					moveCounter = 30 + (int)(Math.random()*30);
+					moveCounter = 60 + (int)(Math.random()*30);
 				}
 				//found object, but not prey
-				else if (m_ioio_thread.getCrashWarning1() && yellowRadius[0] <= 70) {
+				else if (m_ioio_thread.getCrashWarning1() && yellowRadius[0] <= 30) {
 					m_ioio_thread.avoid(); //avoid obstacle
 					Log.i("HI 1", "Im stopped");
 				}
@@ -409,12 +420,12 @@ public class Main_activity extends Activity implements IOIOLooperProvider, CvCam
 				}
 				else if(outsideNest) {
 					//found prey on left; follow
-					if (yellowCenter.x < 500 && (yellowRadius[0] < 320 && yellowRadius[0] > 70)) {
+					if (yellowCenter.x < 500 && (yellowRadius[0] < 320 && yellowRadius[0] > 30)) {
 						m_ioio_thread.move(1500); //stop
 						m_ioio_thread.turn(1400); //turn ccw
 					}
 					//found prey on right; follow
-					else if (yellowCenter.x > 1100 && (yellowRadius[0] < 320 && yellowRadius[0] > 70)) {
+					else if (yellowCenter.x > 1100 && (yellowRadius[0] < 320 && yellowRadius[0] > 30)) {
 						m_ioio_thread.move(1500); //stop
 						m_ioio_thread.turn(1600); //turn cw
 					}
@@ -425,22 +436,15 @@ public class Main_activity extends Activity implements IOIOLooperProvider, CvCam
 
 						sendInt(1);
 						ToneGenerator toneG = new ToneGenerator(AudioManager.STREAM_ALARM, 100);
-						toneG.startTone(ToneGenerator.TONE_CDMA_PIP, 400);
+						toneG.startTone(ToneGenerator.TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING, 400);
 						autoMode = false;
 					}
-					//spotted prey
 					else {
-						if (sleepCounter % 60 < 30) {
-							m_ioio_thread.move(1600); //move forward
-						} else {
-							m_ioio_thread.move(1500); //stop
-						}
-
-						//m_ioio_thread.move(1600); //move
+						m_ioio_thread.turn(1500); //turn cw
+						m_ioio_thread.move(1600); //stop
 					}
 				}
 			}
-
 		} else {
 			Log.i("HI 5", "Im stopped");
 			m_ioio_thread.move(1500); // stop

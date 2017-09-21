@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="21"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="25"
     density="xxhdpi"
     format="7"
-    timestamp="150177710878" >
+    timestamp="80455692451406" >
 
     <task
         name="javac"
-        duration="2165" />
+        duration="488" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="365" />
+        duration="22" />
     <task
         name="verifier"
-        duration="47" />
+        duration="2" />
 
     <artifact
         location="/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/build/outputs/apk/ABR_predator-debug.apk"
         type="MAIN" />
 
-    <build timestamp="150177710878" >
+    <build timestamp="80455692451406" >
         <artifact
             location="/Users/tiffany/Documents/android-studio/ABR_FoodPredator/ABR_predator/build/outputs/apk/ABR_predator-debug.apk"
             type="MAIN" />

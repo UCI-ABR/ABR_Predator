@@ -401,14 +401,14 @@ public class Main_activity extends Activity implements IOIOLooperProvider, CvCam
 			}
 			else {
 				//search for prey
-				if (yellowRadius[0] <= 30) {
+				if (yellowRadius[0] <= 100) {
 					//m_ioio_thread.move(1500); //stop
 					//m_ioio_thread.turn(1400); //turn ccw
 					turnAroundCounter = 30 + (int)(Math.random()*30);
 					moveCounter = 60 + (int)(Math.random()*30);
 				}
 				//found object, but not prey
-				else if (m_ioio_thread.getCrashWarning1() && yellowRadius[0] <= 30) {
+				else if (m_ioio_thread.getCrashWarning1() && yellowRadius[0] <= 100) {
 					m_ioio_thread.avoid(); //avoid obstacle
 					Log.i("HI 1", "Im stopped");
 				}
@@ -420,17 +420,17 @@ public class Main_activity extends Activity implements IOIOLooperProvider, CvCam
 				}
 				else if(outsideNest) {
 					//found prey on left; follow
-					if (yellowCenter.x < 500 && (yellowRadius[0] < 320 && yellowRadius[0] > 30)) {
+					if (yellowCenter.x < 500 && (yellowRadius[0] < 380 && yellowRadius[0] > 100)) {
 						m_ioio_thread.move(1500); //stop
 						m_ioio_thread.turn(1400); //turn ccw
 					}
 					//found prey on right; follow
-					else if (yellowCenter.x > 1100 && (yellowRadius[0] < 320 && yellowRadius[0] > 30)) {
+					else if (yellowCenter.x > 1100 && (yellowRadius[0] < 380 && yellowRadius[0] > 100)) {
 						m_ioio_thread.move(1500); //stop
 						m_ioio_thread.turn(1600); //turn cw
 					}
 					//caught prey; stop
-					else if (yellowRadius[0] >= 320) {
+					else if (yellowRadius[0] >= 380) {
 						m_ioio_thread.move(1500); //stop
 						Log.i("HI 3", "Im stopped");
 
